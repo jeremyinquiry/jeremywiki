@@ -141,11 +141,19 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/DefaultMoreSidebarTab</li>
+
+<li>$:/config/DefaultSidebarTab</li>
+
 <li>$:/config/EmptyStoryMessage</li>
+
+<li>$:/config/Manager/Filter</li>
 
 <li>$:/config/Manager/System</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
@@ -163,9 +171,17 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/config/TimestampDisable</li>
 
+<li>$:/config/Toolbar/Icons</li>
+
+<li>$:/config/Toolbar/Text</li>
+
 <li>$:/core</li>
+
+<li>$:/core/ui/SideBar/Recent</li>
 
 <li>$:/DefaultTiddlers</li>
 
@@ -175,6 +191,8 @@ Error message and password prompt
 
 <li>$:/GitHub/Username</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/palette</li>
@@ -182,6 +200,10 @@ Error message and password prompt
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
+
+<li>$:/state/advancedsearch/currentTab</li>
+
+<li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
 
@@ -213,6 +235,8 @@ Error message and password prompt
 
 <li>jeremywiki contents</li>
 
+<li>Outlines of Pyrrhonism</li>
+
 <li>Welcome</li>
 
 </ul>
@@ -229,21 +253,33 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20230215150031378" modified="20230215150031378" title="$:/config/DefaultMoreSidebarTab">
+<pre>$:/core/ui/MoreSideBar/All</pre>
+</div>
+<div created="20230215150055811" modified="20230215150055811" title="$:/config/DefaultSidebarTab">
+<pre>$:/core/ui/SideBar/More</pre>
+</div>
 <div created="20230215135150884" modified="20230215135718731" tags="" title="$:/config/EmptyStoryMessage">
 <pre>{{Welcome||$:/core/ui/ViewTemplate}}
 </pre>
 </div>
-<div created="20230203000605257" modified="20230215141047491" title="$:/config/Manager/System">
+<div created="20230215143204300" modified="20230215150007217" title="$:/config/Manager/Filter">
+<pre></pre>
+</div>
+<div created="20230203000605257" modified="20230215150002818" title="$:/config/Manager/System">
 <pre>system</pre>
 </div>
 <div created="20230203000900852" modified="20230203000900852" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>hide</pre>
 </div>
+<div created="20230215145819015" modified="20230215145855679" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen">
+<pre>hide</pre>
+</div>
 <div created="20230203000847154" modified="20230203000847154" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
-<div created="20230203000904757" modified="20230203000904757" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager">
-<pre>show</pre>
+<div created="20230203000904757" modified="20230215150346042" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager">
+<pre>hide</pre>
 </div>
 <div created="20230203000856676" modified="20230203000856676" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
@@ -263,7 +299,16 @@ Error message and password prompt
 <div created="20230203001003068" modified="20230203001010587" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp">
 <pre>hide</pre>
 </div>
+<div created="20230215162801662" modified="20230215162801662" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
+</div>
 <div created="20230203001004282" modified="20230203001006130" title="$:/config/TimestampDisable">
+<pre>no</pre>
+</div>
+<div created="20230215150236938" modified="20230215150256324" title="$:/config/Toolbar/Icons">
+<pre>yes</pre>
+</div>
+<div created="20230215150213073" modified="20230215150258576" title="$:/config/Toolbar/Text">
 <pre>no</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
@@ -10130,6 +10175,10 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div caption="{{$:/language/SideBar/Recent/Caption}}" created="20230215145838720" modified="20230215145841524" tags="" title="$:/core/ui/SideBar/Recent">
+<pre>&lt;$macrocall $name=&quot;timeline&quot; format={{$:/language/RecentChanges/DateFormat}}/&gt;
+</pre>
+</div>
 <div created="20230203000801090" modified="20230203000801748" title="$:/DefaultTiddlers">
 <pre>Welcome
 </pre>
@@ -10143,6 +10192,11 @@ Error message and password prompt
 <div created="20210825230541342" modified="20230203001333821" title="$:/GitHub/Username">
 <pre></pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[Outlines of Pyrrhonism]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -10155,34 +10209,40 @@ Error message and password prompt
 <div created="20230203000458396" modified="20230203000500004" title="$:/SiteTitle">
 <pre>jeremywiki</pre>
 </div>
-<div created="20230203000842730" modified="20230203001301223" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Toolbars</pre>
+<div created="20230215145654135" modified="20230215145655979" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20230203001342942" modified="20230203001342942" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20230215145654135" modified="20230215145655979" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+</div>
+<div created="20230203000842730" modified="20230215142459962" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Theme</pre>
+</div>
+<div created="20230203001342942" modified="20230215142420192" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20230203001346604" modified="20230203001401262" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/Stylesheets</pre>
 </div>
-<div created="20210825230530409" modified="20230203001341353" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210825230530409" modified="20230215142501175" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20210825230532903" modified="20210825230623938" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20230203000528722" modified="20230203000539068" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Orphans</pre>
+<div created="20230203000528722" modified="20230215150226287" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20230203000523266" modified="20230215141230832" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20230203000523266" modified="20230215214011297" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20230203000844160" modified="20230203001304762" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<div created="20230203000844160" modified="20230215142455587" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20230215141140539" list="Welcome [[jeremywiki contents]]" modified="20230215141152924" title="$:/StoryList">
+<div created="20230215162719775" list="Welcome [[Outlines of Pyrrhonism]]" modified="20230215214633776" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20230203000914734" modified="20230203000924693" title="$:/theme">
@@ -10300,26 +10360,60 @@ Error message and password prompt
 <div created="20230215135613015" modified="20230215141149251" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20230203001617863" modified="20230203004235991" tags="" title="jeremywiki contents">
+<div created="20230203001617863" modified="20230215163056462" tags="" title="jeremywiki contents">
 <pre>!! What am I reading?
 
-In short, I always feel confused and I read to alleviate my confusion. Whenever I see a disagreement, I want to understand both sides and then more sides.
+In short, I always feel confused and I read to alleviate my confusion. 
 
-I'm mostly interested in social problems. I want to explore and examine the obstacles to treating people as if they matter. In this vein, a lot of my books are about political science, economics and history. This is not a guiding principle, it's just my best attempt to explain to you the randomness of my book choices.
+I'm interested in the unique possibilities and the unique vulnerabilities that come from government acting beneficently. And I'm interested in the mitigation of social problems. In this vein, I like to read about political theory, political history, and political research generally. 
 
-I also have interests in philosophy and religion which are less practical and less well-defined that will show up here from time to time.
+I also have interests in philosophy and religion that will show up here from time to time.
+
+I'm also interested in cartoons as an art form and the intersection of cartoons and writing. Secretly, I would like to make all of this into a cartoon, but I don't know how to draw and I'm too busy to learn. But I'm not too busy to read about it.
 
 !! What am I writing?
 
-You could call them miniature book reports. I'm calling them &quot;articles&quot; for simplicity. Everything I'm writing is based on the notes that I take while reading a book. My judgement of what's interesting may not sync with the author's judgement. I'm also trying to keep the articles short (about 2 pages) because I don't have a lot to say and because reading is boring.
+You could call them miniature book reports. I'm calling them &quot;articles&quot; for simplicity. Everything I'm writing is based on the notes that I take while reading a book. My judgement of what's interesting may not sync with the author's judgement. I'm trying to keep the articles short (about 2 pages) because I don't have a lot to say and text is boring.
 
-After I finish reading a book, I gather all my notes and mush them together until they get small and coherent. That's the centerpiece of each article. Each article has at least three sections. The notes are the second section called Points of Interest. The first section gives context about the book so that the Points of Interest will make sense. Then there are one or two further sections discussing the Points of Interest. The Practical Implications section discusses how this information could affect people's lives. The Personal Impressions section discusses how the book has influenced my own values.
+After I finish reading a book, I gather all my notes and mush them together until they get small and coherent. That's the centerpiece of each article. Each article has at least three sections. The notes are the second section called Points of Interest. The first section gives context about the book so that the Points of Interest will make sense. Then I'll discuss the Practical Implications (how this information could affect people's lives) and/or my Personal Impressions (how the book has influenced my own values).
 
-And one final eccentricity: I'm keeping my language at a middle school reading level. This is all a replacement of my formal education which did not serve me; I'm offering it to my 13 year old self. It also helps keep my writing focused whenever I ask myself &quot;would I really care about this when I was 13?&quot;
-</pre>
+And one final peculiarity: I'm keeping my language at a middle school reading level. This is all a replacement of my formal education which did not serve me, so I'm offering it to my 13 year old self. It also helps keep my writing focused whenever I ask myself whether I would care about this when I was 13.</pre>
 </div>
-<div created="20230203000650932" modified="20230215134809537" tags="" title="Welcome">
-<pre>You're here. This is a collection of my writings about books. Well, there's not much to see yet. There's probably a list of the articles below. It's a little strange, so I have explained what I'm reading and what I'm writing [[here|jeremywiki contents]].
+<div created="20230215005809280" modified="20230215214744853" tags="" title="Outlines of Pyrrhonism">
+<pre>!!Overview
+
+Pyrrhonism is an ancient form of skepticism that makes &quot;I don't know&quot; into a well thought out and defensible position. Outlines of Pyrrhonism is the name of an introductory text written by the Roman physician Sextus Empiricus in the 2nd century AD based on the ideas of the Greek philosopher Pyrrho. Rome at this time was a place crowded with many philosophies; all competing for their own vision of metaphysics, logic and ethics; each one firmly entrenched and fighting for superiority. Pyrrhonism offered a respite to those who wished to understand the world around them, but who were unconvinced by all the greatest ideas available. To me, Pyrrhonism represents a philosophy of &quot;disappointment with philosophy&quot;.
+
+!!Points of Interest
+
+* Pyrrhonists ask questions out of curiosity or because they are dissatisfied with their own understanding. While there are answers to be found, Pyrrhonists will find the answers unsatisfying because 1) they lead to more questions, 2) different answers might conflict with one another, and 3) the answers seem to always leave gaps in our knowledge. &lt;!--(1.1,6)--&gt;
+* The defining characteristic of a Pyrrhonist is that they choose not to overlook knowledge gaps and they allow their consequent dissatisfaction to moderate their confidence in any given answer to their question.
+* With enough questioning, a Pyrrhonist can become familiar with the best available answers to their question. At this point, the persistence of knowledge gaps keeps the Pyrrhonist unconvinced and stumped.
+* For Sextus, we always know what seems true, but the relationship between &quot;seems true&quot; and &quot;is true&quot; is always questionable; or, to be more precise, it seems to always be questionable. The life of a Pyrrhonist is one that tries to make due without firm beliefs, one that (thereby) fully expects problems from the natural inaccuracy of our beliefs, and one that is rich in the knowledge of other people's similarly inaccurate perspectives.
+
+!!Practical Implications
+
+The practical implications of Pyrrhonism have to do with our attitude towards our beliefs. Something like a Pyrrhonian attitude can be seen in places that depend on making predictions such as business, science or warfare. Untested predictions regularly fail because the outside world is so different from the inside world of our thoughts. Regular failure makes self-criticism and changing one’s mind a natural part of life; this is a Pyrrhonian attitude. But not all beliefs are easy to test. Many beliefs about politics, religion or philosophy are too complex or too subjective for the outside world to regulate. Left untested and unregulated, the mind is free to believe just about anything it wants to.
+
+Pyrrhonism disturbs this comfortable situation by asking us to remain aware that each of our beliefs, no matter how important, might be incorrect. The primary obstacle to this is our dedication to the beliefs most central to our life. But dedication just takes another form under Pyrrhonism. Instead of planning to defend a belief before finding opposition, Pyrrhonism begins with inviting and seeking out all opposition and alternatives. But then, dedication means that the seeking doesn't end. Accidentally, this makes their belief stronger as it grows to accommodate new explanations for itself. The catch is, this growth can only be achieved if we open our belief to being discredited. But for a Pyrrhonist, this is not a great sacrifice because no explanation is ever finished.
+
+!!Personal Impressions
+
+Knowing the truth turns out to be totally unhelpful in the task of living with the ones who disagree. Sextus merely shifts the focus of truth-seeking to this problem and decides that none of us have the truth until all of us have the truth. In the meantime, Sextus offers a way to live without it.
+
+I take Pyrrhonism to be a perfect explanation of my own limitations. Its attention to the tension between what we know and what we don't know is the foundation of a humble, judicious, efficient, agile, conscientious, serious pursuit of understanding.</pre>
+</div>
+<div created="20230203000650932" modified="20230215214454577" tags="" title="Welcome">
+<pre>You're here. This is a collection of my writings about books. Well, there's not much to see yet. It's a little strange, so I have explained what I'm reading and what I'm writing [[here|jeremywiki contents]]. There's probably a list of the articles below.
+
+&lt;!-- I'm writing in relative isolation and without any relevant schooling. It's highly likely that I will make mistakes. If you want to make a comment, I might pay attention to emails sent to [a place]. --&gt;
+
+Next prospective article: Renaissance Self-Fashioning by Stephen Greenblatt &lt;br&gt;
+Currently reading: Natural Law and Moral Philosophy by Knud Haakonssen
+
+&lt;hr&gt;
+
+Presently there is only one article, which was published on February 15, 2023. It's about [[Pyrrhonian Skepticism|Outlines of Pyrrhonism]]. This might sound unpleasant, but I have at least blended it up into a paste that's easy to swallow. I don't know what'll happen when it's inside though.
 
 </pre>
 </div>
